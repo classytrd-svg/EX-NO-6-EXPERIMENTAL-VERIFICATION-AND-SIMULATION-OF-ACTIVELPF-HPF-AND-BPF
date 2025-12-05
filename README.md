@@ -1,273 +1,113 @@
-# EX-NO-6-EXPERIMENTAL-VERIFICATION-AND-SIMULATION-OF-ACTIVELPF-HPF-AND-BPF
-## 6 DESIGN OF ACTIVE LOW PASS, HIGH PASS AND BAND PASS FILTERS USING OP-AMP
-            
-**DATE:**  
-         
----
-
-## AIM
-            
-**DATE:**  
-         
----
-
-## AIM and obtain the frequency response of
-
+# DESIGN-OF-ACTIVE-LOW-PASS-HIGH-PASS-AND-BAND-PASS-FILTERS-USING-OP-AMP
+## AIM: 	
+To design and obtain the frequency response of
 i)	First order Low Pass Filter (LPF)
 ii)	First order High Pass Filter (HPF)
 iii)	Band pass filter
 
----
+## APPARATUS REQUIRED:  
+<img width="653" height="177" alt="image" src="https://github.com/user-attachments/assets/707b4cca-e253-4b36-8951-e688e1450abf" />
 
-** 6 A :- LOW PASS FILTER**
-
-
-
-## THEORY
+## THEORY:
 ## LOW PASS FILTER
-A LPF allows frequencies from 0 to higher cut of frequency, fH. At fH the gain is 0.707 Amax, and after fH gain decreases at a constant rate with an increase in frequency. The gain decreases 20dB each time the frequency is increased by 10. Hence the rate at which the gain rolls off after fH is 20dB/decade or 6 dB/ octave, where octave signifies a two fold increase in frequency. The frequency f=fH is called the cut off frequency because the gain of the filter at this frequency is down by 3 dB from 0 Hz. Other equivalent terms for cut-off frequency are -3dB frequency, break frequency, or corner frequency.
-## APPARATUS REQUIRED
+A LPF allows frequencies from 0 to higher cut of frequency, fH.  At fH the gain is 0.707 Amax, and after fH gain decreases at a constant rate with an increase in frequency.  The gain decreases 20dB each time the frequency is increased by 10.  Hence the rate at which the gain rolls off after fH is 20dB/decade or 6 dB/ octave, where octave signifies a two fold increase in frequency.  The frequency f=fH is called the cut off frequency because the gain of the filter at this frequency is down by 3 dB from 0 Hz.  Other equivalent terms for cut-off frequency are -3dB frequency, break frequency, or corner frequency.
 
-| S.No | Name of the Apparatus | Range | Quantity |
-|------|------------------------|--------|-----------|
-| 1 | Function Generator | 3 MHz | 1 |
-| 2 | DSO | 30 MHz | 1 |
-| 3 | Dual RPS | (0 – 30) V | 1 |
-| 4 | Op-Amp | µA741 | 2 |
-| 5 | Bread Board | — | 1 |
-| 6 | Resistors | 1.6K,10K,0.1 µF | 1 |
-| 7 | Connecting wires and probes | As required | — |
+## CIRCUIT DIAGRAM:
+## LOW PASS FILTER
+<img width="547" height="310" alt="image" src="https://github.com/user-attachments/assets/d2b52f47-02d3-4683-99b3-71be13b4dced" />
 
----
-## CIRCUIT DIAGRAM
-<img width="836" height="455" alt="image" src="https://github.com/user-attachments/assets/e5181151-836f-4f80-8f56-53b23ff05c74" />
+## MODEL GRAPH: LOW PASS FILTER
+ <img width="602" height="346" alt="image" src="https://github.com/user-attachments/assets/db9d11c7-e823-46f2-bb3e-635a71cbd0b2" />
 
+## TABULATION: LOW PASS FILTER
+   ![WhatsApp Image 2025-11-18 at 10 58 47_927d7a3e](https://github.com/user-attachments/assets/48fb2a9a-cd69-491e-9dbe-0513569ad7cf)
 
-## MODEL GRAPH
-<img width="913" height="559" alt="image" src="https://github.com/user-attachments/assets/c8d28c41-6f3e-44a6-a9da-2b798cf07346" />
+                                                                   		
+## GRAPH: LOW PASS FILTER
+![WhatsApp Image 2025-11-18 at 10 58 47_2a531bb6](https://github.com/user-attachments/assets/46fd981f-a026-4d66-ae36-327d6a244915)
 
----
+## HIGH PASS FILTER
+The frequency at which the magnitude of the gain is 0.707 times the maximum value of gain is called low cut off frequency.  Obviously, all frequencies higher than fL are pass band frequencies with the highest frequency determined by the closed –loop band width all of the op-amp.
 
-## DESIGN
-
-Given: fH = 1 KHz = 1/ (2πRC) Let C = 0.1 µF, R = 1.6 KΩ
-For n = 2, α (damping factor) = 1.414, Passband gain = Ao = 3 - α =3 – 1.414 = 1.586.
-Transfer function of second order butterworth LPF as:
-1.586
- 
-H(s) =
- 
-S2 + 1.414 s + 1
- 
-Now	Ao = 1 + (Rf / R1) = 1.586 = 1 + 0.586
-Let Ri = 10 KΩ, then Rf = 5.86 KΩ
-
-
-## PROCEDURE
-
-PROCEDURE - (LPF):
-1.	Connect the circuit as shown in the circuit diagram.
-2.	Select the corresponding cut-off frequency  lower) and determine the value of C&R. select the value of R1 & Rf depending on desired passband gain Af..
-3.	Apply a constant voltage input sinusoidal signal to the non-inverting terminal of op-amp.
-4.	Tabulate the output voltage Vo with respect to different values of input frequency.
-5.	Calculate passband gain and plot the graph of frequency versus voltage gain & check the graph to get approximately the same characteristic as shown in the model graph.
-
-
-
-## TABULATION
-
-| S.No | Frequency (Hz) | Output Voltage (V) | Gain = 20 log (Vo/Vi) (dB) |
-|------|----------------|--------------------|-----------------------------|
-| 1    |                |                    |                             |
-| 2    |                |                    |                             |
-| 3    |                |                    |                             |
-| 4    |                |                    |                             |
-| 5    |                |                    |                             |
-| 6    |                |                    |                             |
-| 7    |                |                    |                             |
-| 8    |                |                    |                             |
-| 9    |                |                    |                             |
-| 10   |                |                    |                             |
-| 11   |                |                    |                             |
-| 12   |                |                    |                             |
-		
-
----
-
-## OUT PUT WAVEFORM AND DISCUSSION 
-
----
-
- ## 6 B HIGH PASS FILTER
-
----
-
-## THEORY
+## CIRCUIT DIAGRAM:
 HIGH PASS FILTER
-A HPF allows frequencies from 0 to higher cut of frequency, fH. At fH the gain is 0.707 Amax, and after fH gain decreases at a constant rate with an increase in frequency. The gain decreases 20dB each time the frequency is increased by 10. Hence the rate at which the gain rolls off after fH is 20dB/decade or 6 dB/ octave, where octave signifies a two fold increase in frequency. The frequency f=fH is called the cut off frequency because the gain of the filter at this frequency is down by 3 dB from 0 Hz. Other equivalent terms for cut-off frequency are -3dB frequency, break frequency, or corner frequency.
+<img width="587" height="314" alt="image" src="https://github.com/user-attachments/assets/219176d8-9b2c-4fa1-bc87-fa84bfaf6f91" />
 
+## MODEL GRAPH: HIGH PASS FILTER
+<img width="1007" height="488" alt="image" src="https://github.com/user-attachments/assets/ebcb29eb-14e0-4a94-99c6-8962f80db50c" />
 
-## APPARATUS REQUIRED
+## TABULATION: HIGH PASS FILTER
+![WhatsApp Image 2025-11-18 at 10 58 48_d2cd7c0d](https://github.com/user-attachments/assets/d340f5de-7a16-4b60-acc9-3195fb6b5128)
 
-| S.No | Name of the Apparatus | Range | Quantity |
-|------|------------------------|--------|-----------|
-| 1 | Function Generator | 3 MHz | 1 |
-| 2 | DSO | 30 MHz | 1 |
-| 3 | Dual RPS | (0 – 30) V | 1 |
-| 4 | Op-Amp | µA741 | 2 |
-| 5 | Bread Board | — | 1 |
-| 6 | Resistors | 1.6K,10K,5.86K, 0.1 µF | 1 |
-| 7 | Connecting wires and probes | As required | — |
+## GRAPH: HIGH PASS FILTER
+![WhatsApp Image 2025-11-18 at 10 58 48_73d0c2c6](https://github.com/user-attachments/assets/50994d7d-9bb4-4c3d-8c82-f4d517ad82ff)
 
+## DESIGN:LPF & HPF
+Given: fH = 1 KHz = 1/ (2πRC)
 
-## CIRCUIT DIAGRAM
+   Let C = 0.1 µF, R = 1.6 KΩ
 
-<img width="887" height="486" alt="image" src="https://github.com/user-attachments/assets/907a1395-28d4-406f-ac09-96c4e060587e" />
+   For n = 2, α (damping factor) = 1.414,
 
+   Passband gain = Ao = 3 - α =3 – 1.414 = 1.586.
 
-## MODEL GRAPH
-
-<img width="1005" height="382" alt="image" src="https://github.com/user-attachments/assets/22925efc-4abc-4fad-90d5-94f3348c3c0b" />
-
----
-
-## DESIGN
-
-Given: fH = 1 KHz = 1/ (2πRC) Let C = 0.1 µF, R = 1.6 KΩ
-For n = 2, α (damping factor) = 1.414, Passband gain = Ao = 3 - α =3 – 1.414 = 1.586.
-Transfer function of second order butterworth LPF as:
+   Transfer function of second order butterworth LPF as:
 1.586
- 
-H(s) =
- 
+H(s) = ---------------------------
 S2 + 1.414 s + 1
+
+                Now	  Ao = 1 + (Rf / R1) = 1.586 = 1 + 0.586
+
+                 Let Ri = 10 KΩ, then Rf = 5.86 KΩ
+
+## BAND PASS FILTER
+A band pass filter has a pass band between two cutoff frequencies fH and fL such that fH > fL.  Any input frequency outside this pass band is attenuated.  There are two types of band-pass filters.  Wide band pass and Narrow band pass filters.  We can define a filter as wide band pass if its quality factor Q <10.  If Q>10, then we call the filter a narrow band pass filter.  A wide band pass filter can be formed by simply cascading high-pass and low-pass sections.  The order of band pass filter depends on the order of high pass and low pass sections.
+
+## CIRCUIT DIAGRAM:
+## BANDPASS FILTER
+<img width="1068" height="446" alt="image" src="https://github.com/user-attachments/assets/8f060ede-0036-4055-98d8-f1ca4fd8221f" />
  
-Now	Ao = 1 + (Rf / R1) = 1.586 = 1 + 0.586
-Let Ri = 10 KΩ, then Rf = 5.86 KΩ
+## MODEL GRAPH: BANDPASS FILTER
+<img width="1058" height="537" alt="image" src="https://github.com/user-attachments/assets/46f7ef48-e8af-437c-958f-680c32873aaa" />
 
+ ## TABULATION: BANDPASS FILTER
+![WhatsApp Image 2025-11-18 at 10 58 49_b0eacba6](https://github.com/user-attachments/assets/ee2fa285-e124-48db-a8c8-1b02436d4764)
 
-## PROCEDURE
+## GRAPH: BANDPASS FILTER
+  ![WhatsApp Image 2025-11-18 at 10 58 48_a488e846](https://github.com/user-attachments/assets/eb5b6ec8-925c-408d-8e0c-2df9503900f0)
 
-PROCEDURE - ( HPF):
-1.	Connect the circuit as shown in the circuit diagram.
-2.	Select the corresponding cut-off frequency ( lower) and determine the value of C&R. select the value of R1 & Rf depending on desired passband gain Af..
-3.	Apply a constant voltage input sinusoidal signal to the non-inverting terminal of op-amp.
-4.	Tabulate the output voltage Vo with respect to different values of input frequency.
-5.	Calculate passband gain and plot the graph of frequency versus voltage gain & check the graph to get approximately the same characteristic as shown in the model graph.
+                                                                                 
+## DESIGN: BAND PASS FILTER
+Design a BPF to pass a band of 400Hz to 2KHz with a pass band gain of 4. 
+1. Select the highest cut-off frequency of LPF as fH = 10 KHz and the lowest cut-off frequency of HPF as fL = 1 KHz. 
+2. Design the HPF first by taking fL = 1KHz. Assume the value of C < 1μf. 
+Let C = 0.1μf. 
+3. Calculate R from the expression. 
+Given: fH = 2KHz  = 1/ (2πR1C1)
+   Let C1 = 0.1 µF, R1 = 7.9 KΩ
+Given: fL = 400Hz  = 1/ (2πR2C2)
+   Let C2 = 0.1 µF, R2 = 39.8 KΩ
+  Pass band Gain=4
+   Now	  Ao = 1 + (Rf / R1) 
+               2-1=(Rf / Ri)
+                Ri = Rf
+                 Let  Ri = Rf = 10 KΩ
 
+## PROCEDURE - (LPF & HPF):
+1. Connect the circuit as shown in the circuit diagram.
+2. Select the corresponding cut-off frequency (higher or lower) and determine the value of C&R. select the value of R1 & Rf depending on desired passband gain Af..
+3. Apply a constant voltage input sinusoidal signal to the non-inverting terminal of op-amp.
+4. Tabulate the output voltage Vo with respect to different values of input frequency.
+5. Calculate passband gain and plot the graph of frequency versus voltage gain & check the graph to  get approximately the same characteristic as shown in the model graph.
 
+## PROCEDURE:BAND PASS FILTER
+1. Select the lower and higher cut-off frequency and calculate the value of R & C for the given frequencies.
+2. Design for LPF & HPF separately and then combine the circuit by first placing the HPF followed by a LPF (i.e) HPF in series with LPF.
+3. Connect the circuit as shown in the circuit diagram.
+4. Apply a constant voltage input sinusoidal signal to the non-inverting terminal of op-amp.
+5. Tabulate the output voltage Vo with respect to different values of input frequency.
+6. Calculate passband gain and plot the graph of frequency versus voltage gain & check the graph to get approximately the same characteristic as shown in the model graph.
 
-## TABULATION
+## RESULT:
+![WhatsApp Image 2025-11-18 at 10 58 49_5534e0e3](https://github.com/user-attachments/assets/99e25266-655c-4647-9139-0e1889653cad)
 
-		
-| S.No | Frequency (Hz) | Output Voltage (V) | Gain = 20 log (Vo/Vi) (dB) |
-|------|----------------|--------------------|-----------------------------|
-| 1    |                |                    |                             |
-| 2    |                |                    |                             |
-| 3    |                |                    |                             |
-| 4    |                |                    |                             |
-| 5    |                |                    |                             |
-| 6    |                |                    |                             |
-| 7    |                |                    |                             |
-| 8    |                |                    |                             |
-| 9    |                |                    |                             |
-| 10   |                |                    |                             |
-| 11   |                |                    |                             |
-| 12   |                |                    |                             |
-
----
-
-## OUT PUT WAVEFORM AND DISCUSSION 
-
----
-
- ## 6C Band Pass Filter
-
----
-
-## THEORY
- ##Band Pass Filter
-A BPF allows frequencies in between lower cut of frequency and higher cut of frequency, fH-fL. A band-pass (BP) filter passes frequencies in a band fL_fH and attenuates below fL and above fH.. The gain decreases 20dB each time the frequency is increased by 10. Hence the rate at which the gain rolls off after fH is 20dB/decade or 6 dB/ octave, where octave signifies a two fold increase in frequency. The frequency f=fH is called the cut off frequency because the gain of the filter at this frequency is down by 3 dB from 0 Hz. Other equivalent terms for cut-off frequency are -3dB frequency, break frequency, or corner frequency.
-
-
-## APPARATUS REQUIRED
-
-| S.No | Name of the Apparatus | Range | Quantity |
-|------|------------------------|--------|-----------|
-| 1 | Function Generator | 3 MHz | 1 |
-| 2 | DSO | 30 MHz | 1 |
-| 3 | Dual RPS | (0 – 30) V | 1 |
-| 4 | Op-Amp | µA741 | 2 |
-| 5 | Bread Board | — | 1 |
-| 6 | Resistors |10K,38.8K,7.9K,0.01uf | 1 |
-| 7 | Connecting ires and probes | As required | — |
-
-
-## CIRCUIT DIAGRAM
-
-<img width="1068" height="446" alt="image" src="https://github.com/user-attachments/assets/ee37b95a-05ea-448c-9102-111e071e41e8" />
-
-## MODEL GRAPH
-
-<img width="1055" height="537" alt="image" src="https://github.com/user-attachments/assets/f5eec55a-c00c-4eaf-a680-81ba95f66490" />
-
-
----
-
-## DESIGN
-
-DESIGN: BAND PASS FILTER
-
-Design a BPF to pass a band of 400Hz to 2KHz with a pass band gain of 4.
-1.	Select the highest cut-off frequency of LPF as fH = 10 KHz and the lowest cut-off frequency of HPF as fL = 1 KHz.
-2.	Design the HPF first by taking fL = 1KHz. Assume the value of C < 1μf. Let C = 0.1μf.
-3.	Calculate R from the expression. Given: fH = 2KHz = 1/ (2πR1C1) Let C1 = 0.1 µF, R1 = 7.9 KΩ
-Given: fL = 400Hz = 1/ (2πR2C2)
-Let C2 = 0.1 µF, R2 = 39.8 KΩ
-Pass band Gain=4
-Now		Ao = 1 + (Rf / R1) 2-1=(Rf / Ri)
-Ri = Rf
-Let Ri = Rf = 10 KΩ
-
-
-## PROCEDURE
-
-PROCEDURE:BAND PASS FILTER
-1.	Select the lower and higher cut-off frequency and calculate the value of R & C for the given frequencies.
-2.	Design for LPF & HPF separately and then combine the circuit by first placing the HPF followed by a LPF (i.e) HPF in series with LPF.
-3.	Connect the circuit as shown in the circuit diagram.
-4.	Apply a constant voltage input sinusoidal signal to the non-inverting terminal of op-amp.
-5.	Tabulate the output voltage Vo with respect to different values of input frequency.
-6.	Calculate passband gain and plot the graph of frequency versus voltage gain & check the graph to get approximately the same characteristic as shown in the model graph.
-
-
-
-## TABULATION
-
-		
-| S.No | Frequency (Hz) | Output Voltage (V) | Gain = 20 log (Vo/Vi) (dB) |
-|------|----------------|--------------------|-----------------------------|
-| 1    |                |                    |                             |
-| 2    |                |                    |                             |
-| 3    |                |                    |                             |
-| 4    |                |                    |                             |
-| 5    |                |                    |                             |
-| 6    |                |                    |                             |
-| 7    |                |                    |                             |
-| 8    |                |                    |                             |
-| 9    |                |                    |                             |
-| 10   |                |                    |                             |
-| 11   |                |                    |                             |
-| 12   |                |                    |                             |
-
----
-
-## OUT PUT WAVEFORM AND DISCUSSION 
-
----
-##RESULT:
-	Thus an Active Low pass, High pass and Band Pass Filters are designed and
-tested using op-amp IC 741.
----
-
-   
